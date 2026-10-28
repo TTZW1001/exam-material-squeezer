@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exam-material-squeezer"
+version = "1.0.0"
+description = "Windows GUI tool for compressing exam/registration PDF and image files under a hard size limit."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Exam Material Squeezer contributors" }]
+dependencies = ["Pillow>=10.1"]
+keywords = ["pdf", "image", "compression", "ghostscript", "tkinter", "exam"]
+
+[project.gui-scripts]
+exam-material-squeezer = "ui.main_window:main"
+
+[tool.setuptools]
+packages = ["core", "ui"]

@@ -1,0 +1,4 @@
+Pillow>=10.1
+
+# Ghostscript is also required (not a Python package):
+# https://www.ghostscript.com/releases/gsdnld.html
